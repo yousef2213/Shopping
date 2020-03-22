@@ -1,0 +1,22 @@
+export const items = [
+    {
+        id:1,
+        path:'/',
+        link:"home"
+    },
+    {
+        id:2,
+        path:'/shop',
+        link:"shop"
+    },
+    {
+        id:3,
+        path:'/cart',
+        link:"cart"
+    },
+    {
+        id:4,
+        path:'/contact',
+        link:"contact"
+    }
+]

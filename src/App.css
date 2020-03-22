@@ -1,0 +1,74 @@
+.home{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), center/cover url("./image/hero.jpeg") no-repeat;
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.thank{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), center/cover url("./image/thank.jpeg") no-repeat;
+    height: calc(100vh - 70px);
+}
+.banner{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2)), center/cover url("./image/eror.jpg") no-repeat;
+    height: calc(100vh - 68px);
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 30px;
+}
+.imgs{
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width:700px){
+    .items{
+        display: grid;
+        grid-template-columns :  repeat(2,1fr);
+    }
+}
+@media (min-width:1000px){
+    .items{
+        display: grid;
+        grid-template-columns :  repeat(3,1fr);
+        
+    }
+    .items > .item:last-child{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 70%;
+    }
+}
+
+.bo{
+    border-bottom: 1px solid #000;
+}
+.cu{
+    cursor: pointer;
+    font-weight: 100;
+}
+.trash{
+    font-family: 'Montserrat', sans-serif!important;
+    font-size: 22px;
+}
+.trash:hover{
+    color: #dc3545;
+}
+.pay{
+    font-size: 18px;
+    background: #ffc107;
+    color: #dc3545;
+    font-weight: 500;
+    border: 0;
+    border-radius: 20px;
+    padding: 3px 20px;
+}
+.bu:hover{
+    text-decoration:none;
+    outline-offset:1px;
+    color:#ddd;
+}
